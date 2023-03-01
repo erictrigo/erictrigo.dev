@@ -1,0 +1,123 @@
+---
+import { t } from "i18next";
+import HighlightedLink from "./HighlightedLink.astro";
+import Tag from "./Tag.astro";
+
+const jobs = [
+  {
+    title: t("experience.jobs.title1"),
+    company: "NTT Data",
+    url: "https://www.nttdata.com",
+    timeRange: t("experience.jobs.date1"),
+    description: t("experience.jobs.desc1"),
+    tags: [".NET", "C#", "Mediatr", "DDD", "YAML", "K8s", "Azure", "AWS", "Docker", "Helm", "MongoDB", "GitLab CI/CD", "Jira", "Dapr", "Istio", "Kaniko", "Tekton", "Nexus", "KEDA"]
+  },
+  {
+    title: t("experience.jobs.title2"),
+    company: "G.team @ Vueling",
+    url: "https://gteam.es/",
+    timeRange: t("experience.jobs.date2"),
+    description: t("experience.jobs.desc2"),
+    tags: [".NET", "C#", "WebAPI", "Scrum", "DDD", "Jira", "Azure DevOps", "SQL Server", "TFS"]
+  },
+  {
+    title: t("experience.jobs.title3"),
+    company: "Hiberus @ Ibercaja",
+    url: "https://www.hiberus.com",
+    timeRange: t("experience.jobs.date3"),
+    description: t("experience.jobs.desc3"),
+    tags: [".NET", "C#", "WinForms", "Scrum", "Azure DevOps", "SQL Server", "Banking", "Insurance"]
+  },
+  {
+    title: t("experience.jobs.title4"),
+    company: "Grupo Titanes",
+    url: "https://www.grupotitanes.com",
+    timeRange: t("experience.jobs.date4"),
+    description: t("experience.jobs.desc4"),
+    tags: [".NET", "C#", "MVC", "Scrum", "SQL Server", "BitBucket", "Jira", "jQuery", "DevExpress"]
+  },
+  {
+    title: t("experience.jobs.title5"),
+    company: "Video Insight",
+    url: "https://www.security.us.panasonic.com/feature/video-insight-7",
+    timeRange: t("experience.jobs.date5"),
+    description: t("experience.jobs.desc5"),
+    tags: [".NET", "VB.NET", "SQL Server", "SourceSafe", "Infragistics"]
+  },
+  {
+    title: t("experience.jobs.title6"),
+    company: "Beverage Metrics",
+    url: "https://beveragemetrics.com",
+    timeRange: t("experience.jobs.date6"),
+    description: t("experience.jobs.desc6"),
+    tags: [".NET", "C#", "Winforms", "SQL Server"]
+  },
+  {
+    title: t("experience.jobs.title7"),
+    company: "Functional IT",
+    url: "#",
+    timeRange: t("experience.jobs.date7"),
+    description: t("experience.jobs.desc7"),
+    tags: [".NET", "C#", "Scrum", "LINQ", "SQL Server", "TFS", "Crystal Reports"]
+  },
+  {
+    title: t("experience.jobs.title8"),
+    company: "Reynolds & Reynolds",
+    url: "https://www.reyrey.com",
+    timeRange: t("experience.jobs.date8"),
+    description: t("experience.jobs.desc8"),
+    tags: ["COBOL"]
+  },
+];
+---
+
+<section
+  aria-labelledby=":rr:"
+  class="mx-auto max-w-5xl sm:px-6 sm:border-l sm:border-primary-700/40 pt-8"
+>
+  <div class="grid grid-cols-1 gap-y-8 items-baseline md:grid-cols-4">
+    <h2
+      id=":rr:"
+      class="text-lg font-semibold tracking-tight sm:text-xl text-primary-100"
+    >
+      {t("experience.title")}
+    </h2>
+    <div class="md:col-span-3">
+      <ul role="list" class="space-y-8">
+        {
+          jobs.map((j) => (
+            <li class="flex flex-col items-start group">
+              <>
+                <div class="flex flex-row justify-between items-baseline pl-2 w-full border-l border-primary-700">
+                  <div class="flex flex-col">
+                    <div class="flex flex-row gap-2 items-center">
+                      <h3 class="text-base font-semibold tracking-tight sm:max-w-none sm:text-lg max-w-[20ch] text-primary-100 group-hover:underline">
+                        <HighlightedLink href={j.url}>{j.company}</HighlightedLink>
+                      </h3>
+                    </div>
+
+                    <h2 class="text-sm tracking-tight sm:max-w-none sm:text-base max-w-[20ch] text-primary-300">
+                      {j.title}
+                    </h2>
+                  </div>
+                  <time class="text-sm text-primary-100">{j.timeRange}</time>
+                </div>
+
+                <p class="z-10 mt-4 text-sm text-primary-300 max-w-[75ch] text-justify">
+                  {j.description}
+                </p>
+                <br />
+                <div class="flex flex-col gap-8 py-2 sm:px-6 mb-0 pb-0 mt-0 pt-0">
+                  <ul class="flex flex-row flex-wrap gap-2">
+                    {j.tags.map((tag) => <Tag>{tag}</Tag>)}
+                  </ul>
+                </div>
+              </>
+            </li>
+            <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>

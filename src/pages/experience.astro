@@ -1,0 +1,21 @@
+---
+import { changeLanguage, t } from "i18next";
+import Experience from "../components/Experience.astro";
+import PageHeader from "../components/PageHeader.astro";
+import Layout from "../layouts/main.astro";
+
+changeLanguage("en");
+---
+
+<Layout
+  title={t("site.title")}
+  pageTitle={t("experience.title")}
+  description={t("experience.description")}
+  type="content"
+>
+  <main class="px-8">
+    <div class="pt-8 sm:pb-4 md:pb-4" />
+    <PageHeader>{t("experience.heading")}</PageHeader>
+    <Experience />
+  </main>
+</Layout>

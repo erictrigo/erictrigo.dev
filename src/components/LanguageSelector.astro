@@ -1,0 +1,30 @@
+---
+import i18next from "i18next";
+import { localizePath } from "astro-i18next";
+import localeEmoji from "locale-emoji";
+export interface Props extends astroHTML.JSX.SelectHTMLAttributes {
+  showFlag?: boolean;
+}
+const supportedLanguages = i18next.languages;
+const currentLanguage = i18next.language;
+const { pathname } = Astro.url;
+const { showFlag = false, ...attributes } = Astro.props;
+---
+
+<select title="Language switcher" onchange="location = this.value;" {...attributes}>
+  {
+    supportedLanguages.map((supportedLanguage: string) => {
+      let value = localizePath(pathname, supportedLanguage);
+      return (
+        <option value={value} selected={supportedLanguage === currentLanguage}>
+          {localeEmoji(supportedLanguage)}
+        </option>
+      );
+    })
+  }
+</select>
+
+<script type="module" defer>
+  import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
+  polyfillCountryFlagEmojis();
+</script>

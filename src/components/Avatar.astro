@@ -1,0 +1,16 @@
+---
+import SocialMediaIcons from "./SocialMediaIcons.astro";
+---
+
+<div class="flex flex-col gap-2 items-center mx-auto group">
+  <img
+    decoding="async"
+    loading="lazy"
+    class="w-20 h-20 rounded-full shadow-sm sm:w-28 sm:h-28 shadow-white aspect-[1/1] outline-accent-400 hover:outline hover:stroke-accent-400 hover:transition-all"
+    src="/images/avatar.webp"
+    alt="Small avatar of myself"
+  />
+  <SocialMediaIcons
+    class="w-8 h-8 stroke-1 hover:cursor-pointer stroke-primary-300 hover:stroke-accent-400"
+  />
+</div>

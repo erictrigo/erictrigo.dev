@@ -1,0 +1,75 @@
+{
+  "site": {
+    "title": "Eric's site",
+    "description": "Eric Trigo's personal website.",
+    "alt": "A picture of Eric."
+  },
+  "social": {
+    "linkedin": "Go to Eric's LinkedIn page.",
+    "github": "Go to Eric's GitHub page."
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "certifications": "Certs"
+  },
+  "home": {
+    "title": "Hi! I'm Eric.",
+    "description": "This is my intro page.",
+    "subtitle": "Thanks for coming by.",
+    "body": "While you're here, you may learn a little bit more <0>about me</0>, review my <1>work experience</1>, or take a look at my current <2>certifications</2>.",
+    "contact": "Also, if you think my skills may be of help for a problem you currently have, feel free to <0>reach out</0>."
+  },
+  "about": {
+    "title": "About",
+    "description": "Here you can learn a little bit more about me.",
+    "heading": "A little bit about me.",
+    "img1": "This is a picture of me.",
+    "img2": "This is a picture of El Pilar, in Zaragoza.",
+    "img3": "This is a picture of my dog, Kiwi.",
+    "heading1": "I am <strong>Eric Trigo</strong>, a <strong>freelance dev</strong> mainly focused on <strong>.NET</strong>, <strong>containers</strong> and <strong>the cloud</strong>.",
+    "body1": "I've never known life without computers, for better or worse. I learned how to code very early in my life, thanks to <0>my dad</0> and <1>brother</1>.<br /><br />Although I've spent most of my career doing backend development based around the .NET ecosystem, these days you're more likely to find me fixing a broken CI/CD pipeline or deploying containers to a Kubernetes cluster.",
+    "heading2": "I live in <0><strong>Saragossa, Spain</strong></0>, from where I work <strong>remotely</strong>.",
+    "body21": "<0>Music</0> is one of my biggest passions, which I inherited from my dad.<br /><br />These songs put me in a good mood, I hope you like them too &#128515;",
+    "body22": "I have been playing guitar since I was little, and when I was younger I wrote a few songs.<br /><br />Here's one I recorded many years ago, check it out!",
+    "heading3": "Me and my partner have a little Dachshund. His name is <strong>Kiwi</strong>.",
+    "body3": "His size is inversely proportional to his evilness. He likes to help me code sometimes. If I lose track of him for one second he'll try to push to master directly, so I've learned to always keep my branches protected!"
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "My work experience sorted by more recent.",
+    "heading": "My work experience, sorted by more recent.",
+    "jobs": {
+      "title1": "DevOps Engineer",
+      "date1": "Apr 2019 - Jan 2023",
+      "desc1": "First time as a DevOps engineer in a low-code, R&D solution. Multicloud (Azure/AWS) day-2 operations + development. Together with my team, built from scratch a .NET 5 microservice which deployed code-generated apps to K8s clusters. Before that as part of the .NET team, built a .NET Core code generator. Member of Technical Office team.",
+      "title2": "Technical Lead",
+      "date2": "Sep 2018 - Apr 2019",
+      "desc2": "Consulting work done at an airline. First time in a team lead role and making use of CI/CD pipelines (as a dev/user).",
+      "title3": "Software Analyst",
+      "date3": "Jul 2017 - Sep 2018",
+      "desc3": "First stint as a consultant at a large bank. Handled the policy renewal process for a life insurance solution.",
+      "title4": "Software Developer",
+      "date4": "Jul 2015 - Jul 2017",
+      "desc4": "Switched desktop for web backend development. Here's where I began learning .NET Core, WebAPI and Git.",
+      "title5": "Software Developer",
+      "date5": "Nov 2013 - Mar 2015",
+      "desc5": ".NET desktop development for a video surveillance software suite.",
+      "title6": "Software Developer",
+      "date6": "Oct 2012 - Nov 2013",
+      "desc6": ".NET desktop development using Winforms.",
+      "title7": "Software Developer",
+      "date7": "Mar 2012 - Jul 2012",
+      "desc7": "First contact with .NET and agile methodologies (Scrum).",
+      "title8": "Junior Developer",
+      "date8": "Jan 2012 - Mar 2012",
+      "desc8": "Junior role."
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "description": "A list of my current certifications.",
+    "heading": "Take a look at my current certifications."
+  }
+}

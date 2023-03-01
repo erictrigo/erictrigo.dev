@@ -1,0 +1,20 @@
+---
+const { title, badge, img } = Astro.props;
+---
+
+<div class="flex inline-flex gap-2 items-center mx-auto">
+  <a
+    rel="prefetch"
+    target="_blank"
+    class="transition hover:text-accent-400"
+    href={`https://www.credly.com/badges/${badge}/public_url`}
+  >
+    <img
+      decoding="async"
+      loading="lazy"
+      class="w-20 h-20 rounded-b-sm sm:w-28 sm:h-28 hover:outline outline-offset-4 hover:transition-all"
+      src={img}
+      title={title}
+    />
+  </a>
+</div>

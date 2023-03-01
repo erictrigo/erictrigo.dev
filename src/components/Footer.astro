@@ -1,0 +1,47 @@
+---
+import { t } from "i18next";
+import SocialMediaIcons from "./SocialMediaIcons.astro";
+import LanguageSelector from "./LanguageSelector.astro";
+import ThemeSwitcher from "./ThemeSwitcher.astro";
+
+const links = [t("navbar.home"), t("navbar.about"), t("navbar.experience"), t("navbar.certifications")];
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="mt-10">
+  <div class="sm:px-2">
+    <div class="mx-auto max-w-7xl lg:px-8">
+      <div class="pt-4 pb-16 border-t border-primary-700/40">
+        <div class="relative px-4 sm:px-8 lg:px-12">
+          <div class="mx-auto max-w-2xl lg:max-w-5xl">
+            <div class="flex flex-col">
+              <div
+                class="flex flex-col gap-2 justify-between items-center sm:flex-row"
+              >
+                <div class="flex gap-2 justify-between items-center h-full text-primary-100 selection:bg-accent-400 selection:text-black">
+                  <LanguageSelector showFlag={true} class="w-1/2"/>
+                  <ThemeSwitcher class="w-1/2"/>
+                </div>
+                <p class="text-sm text-primary-500">
+                  © {currentYear} Eric Trigo
+                </p>
+              </div>
+              <div
+                class="flex flex-col gap-2 items-end self-center sm:self-end"
+              >
+                <a
+                  rel="prefetch"
+                  class="mx-auto text-sm sm:mx-0 text-primary-500 my-[4px] hover:text-accent-400 transition"
+                  href="mailto:&#101;&#114;&#105;&#099;&#064;&#101;&#116;&#101;&#122;&#101;&#046;&#100;&#101;&#118;">&#101;&#114;&#105;&#099;&#064;&#101;&#116;&#101;&#122;&#101;&#046;&#100;&#101;&#118;</a
+                >
+                <SocialMediaIcons
+                  class="p-1 w-11 h-11 hover:cursor-pointer stroke-[0.5] stroke-primary-50 ceva hover:stroke-accent-400 transition"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

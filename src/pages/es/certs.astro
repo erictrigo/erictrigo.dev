@@ -1,0 +1,27 @@
+---
+import { changeLanguage, t } from "i18next";
+import Certification from "../../components/Certification.astro";
+import PageHeader from "../../components/PageHeader.astro";
+import Layout from "../../layouts/main.astro";
+
+changeLanguage("es");
+---
+
+<Layout
+  title={t("site.title")}
+  pageTitle={t("certifications.title")}
+  description={t("certifications.description")}
+  type="content"
+>
+  <main class="px-8">
+    <div class="pt-8 sm:pb-4 md:pb-4" />
+    <PageHeader>{t("certifications.heading")}</PageHeader>
+    <div class="grid grid-cols-3 gap-6 justify-between items-center sm:flex-row pt-6 sm:pb-12 md:pb-4 lg:pb-16">
+      <Certification title="Azure Developer Associate" badge="4c6b2d56-d671-4dd9-a87d-eaa9b43ba466" img="/images/microsoft-certified-azure-developer-associate.1.webp" />
+      <Certification title="Terraform Associate" badge="bb9566e7-67bc-480b-a046-108765090238" img="/images/hashicorp-certified-terraform-associate-002.webp" />
+      <Certification title="Azure AI Fundamentals" badge="47881445-54eb-44d9-a229-1b1da8018509" img="/images/microsoft-certified-azure-ai-fundamentals.webp" />
+      <Certification title="Azure Data Fundamentals" badge="33221bc4-a55b-42c2-b468-482bca7b4f3c" img="/images/microsoft-certified-azure-data-fundamentals.webp" />
+      <Certification title="Azure Fundamentals" badge="e690b5fe-6cda-4d50-bf79-da0c83c24418" img="/images/microsoft-certified-azure-fundamentals.webp" />
+    </div>
+  </main>
+</Layout>

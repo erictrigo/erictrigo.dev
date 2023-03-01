@@ -1,0 +1,14 @@
+---
+interface Props {
+  href?: string;
+}
+const { href } = Astro.props;
+---
+
+<a
+  rel="prefetch"
+  target="_blank"
+  href={href}
+  class="hover:decoration-accent-300 font-semibold hover:text-accent-400 active:text-accent-400"
+  ><slot />
+</a>

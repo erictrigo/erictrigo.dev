@@ -1,0 +1,75 @@
+{
+  "site": {
+    "title": "Sitio de Eric",
+    "description": "Sitio web personal de Eric Trigo.",
+    "alt": "Una foto de Eric."
+  },
+  "social": {
+    "linkedin": "Ir a la página de LinkedIn de Eric.",
+    "github": "Ir a la página de GitHub de Eric."
+  },
+  "navbar": {
+    "home": "Inicio",
+    "about": "Acerca",
+    "experience": "Experiencia",
+    "certifications": "Certs"
+  },
+  "home": {
+    "title": "¡Hola! Soy Eric.",
+    "description": "Esta es mi página de bienvenida.",
+    "subtitle": "Gracias por tu visita.",
+    "body": "Mientras estés por aquí, puedes aprovechar para <0>conocerme</0> un poquito, revisar mi <1>experiencia profesional</1>, o echar un ojo a mis <2>certificaciones</2>.",
+    "contact": "Además, si crees que mis aptitudes te pueden ser de ayuda para resolver un problema que ya tienes, no dudes en <0>darme un toque</0>."
+  },
+  "about": {
+    "title": "Acerca",
+    "description": "Aquí puedes aprender un poquito más sobre mí.",
+    "heading": "Un poco sobre mí.",
+    "img1": "Una foto mía.",
+    "img2": "Una foto de la basílica del Pilar, en Zaragoza.",
+    "img3": "Una foto de mi perro, Kiwi.",
+    "heading1": "Soy <strong>Eric Trigo</strong>, un <strong>desarrollador freelance</strong> principalmente centrado en <strong>.NET</strong>, <strong>contenedores</strong> y <strong>la nube</strong>.",
+    "body1": "Para bien o para mal, no recuerdo la vida sin ordenadores. Aprendí a programar muy pronto, gracias a <0>mi padre</0> y <1>mi hermano</1>.<br /><br />Aunque la mayor parte de mi carrera ha estado dedicada al desarrollo de software dentro del ecosistema .NET, últimamente será más fácil encontrarme arreglando alguna pipeline de CI/CD o desplegando contenedores a un clúster de Kubernetes.",
+    "heading2": "Vivo en <0><strong>Zaragoza, España</strong></0>, desde donde trabajo <strong>en remoto</strong>.",
+    "body21": "<0>La música</0> es una de mis mayores pasiones, que heredé de mi padre.<br /><br />Estas canciones me ponen de buen humor, espero que te gusten &#128515;",
+    "body22": "Toco la guitarra desde pequeñito, y de joven escribí algunas canciones.<br /><br />Aquí hay una que grabé hace demasiados años, ¡échale un ojo!",
+    "heading3": "Mi pareja y yo tenemos un pequeño Teckel. Se llama <strong>Kiwi</strong>.",
+    "body3": "Su tamaño es inversamente proporcional a sus diabluras. Le gusta ayudarme a desarrollar de vez en cuando. Si lo pierdo de vista un segundo es capaz de lanzarme pushes directo a master, así que he aprendido a mantener mis ramas protegidas."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "description": "Mi experiencia laboral, de más a menos reciente.",
+    "heading": "Mi experiencia laboral, de más a menos reciente.",
+    "jobs": {
+      "title1": "Ingeniero DevOps",
+      "date1": "Abr 2019 - Ene 2023",
+      "desc1": "Primera vez como ingeniero DevOps en un proyecto I+D de low-code. Operaciones (día 2) multinube (Azure/AWS) + desarrollo. Junto a mi equipo, construimos desde cero en .NET 5 un microservicio encargado de desplegar aplicaciones de código generado en Kubernetes. Antes de eso, como parte del equipo de .NET, creamos un generador de código .NET Core. Miembro de Oficina Técnica.",
+      "title2": "Líder técnico",
+      "date2": "Sep 2018 - Abr 2019",
+      "desc2": "Trabajo de consultoría realizado para una aerolínea. Primera vez como líder de equipo y también haciendo uso de pipelines de CI/CD (a nivel usuario).",
+      "title3": "Analista de software",
+      "date3": "Jul 2017 - Sep 2018",
+      "desc3": "Primera etapa como consultor para banca. Responsable del proceso de renovación de pólizas para una solución de seguros de vida.",
+      "title4": "Desarrollador de software",
+      "date4": "Jul 2015 - Jul 2017",
+      "desc4": "Paso de desarrollo de escritorio a web backend. Aquí empecé a aprender .NET Core, WebAPI y Git.",
+      "title5": "Desarrollador de software",
+      "date5": "Nov 2013 - Mar 2015",
+      "desc5": "Desarrollo de aplicaciones de escritorio con .NET para una suite de videovigilancia.",
+      "title6": "Desarrollador de software",
+      "date6": "Oct 2012 - Nov 2013",
+      "desc6": "Desarrollo de aplicaciones de escritorio con .NET y Winforms.",
+      "title7": "Desarrollador de software",
+      "date7": "Mar 2012 - Jul 2012",
+      "desc7": "Primer contacto con .NET y metodologías ágiles (Scrum).",
+      "title8": "Desarrollador junior",
+      "date8": "Ene 2012 - Mar 2012",
+      "desc8": "Primer rol."
+    }
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "description": "Listado de mis actuales certificaciones.",
+    "heading": "Echa un vistazo a mis certificaciones vigentes."
+  }
+}

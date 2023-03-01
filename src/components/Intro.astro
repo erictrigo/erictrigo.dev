@@ -1,0 +1,49 @@
+---
+import { t } from "i18next";
+import { Trans } from "astro-i18next/components";
+import Avatar from "./Avatar.astro";
+import { localizePath } from "astro-i18next";
+---
+
+<div class="flex flex-col gap-8 items-center mx-auto mt-16">
+  <Avatar />
+  <div class="flex flex-col gap-4 mb-2 max-w-[75ch]">
+    <h1 class="text-4xl font-bold sm:text-5xl">
+      {t("home.title")}
+    </h1>
+    <h2 class="text-xl font-semibold sm:text-2xl">
+      {t("home.subtitle")}
+    </h2>
+    <p class="text-justify">
+      <Trans i18nKey="home.body">
+        While you're here, you may learn a little bit more <a
+          rel="prefetch"
+          target="_blank"
+          href={localizePath("about")}
+          class="hover:decoration-accent-300 font-semibold hover:text-accent-400 active:text-accent-400"
+        >about me
+        </a>, review my <a
+          rel="prefetch"
+          target="_blank"
+          href={localizePath("experience")}
+          class="hover:decoration-accent-300 font-semibold hover:text-accent-400 active:text-accent-400"
+        >work experience</a>, or take a look at my current <a
+          rel="prefetch"
+          target="_blank"
+          href={localizePath("certs")}
+          class="hover:decoration-accent-300 font-semibold hover:text-accent-400 active:text-accent-400"
+        >certifications</a>.
+      </Trans>
+    </p>
+    <p class="text-justify">
+      <Trans i18nKey="home.contact">
+        If you have a problem that needs solving and you think my skills may be of help, feel free to <a
+          rel="prefetch"
+          target="_blank"
+          href="mailto:&#101;&#114;&#105;&#099;&#064;&#101;&#116;&#101;&#122;&#101;&#046;&#100;&#101;&#118;"
+          class="hover:decoration-accent-300 font-semibold hover:text-accent-400 active:text-accent-400"
+        >reach out</a>.
+      </Trans>
+    </p>
+  </div>
+</div>

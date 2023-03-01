@@ -1,0 +1,18 @@
+---
+import { changeLanguage, t } from "i18next";
+import Intro from "../../components/Intro.astro";
+import Layout from "../../layouts/main.astro";
+
+changeLanguage("es");
+---
+
+<Layout
+	title={t("site.title")}
+	pageTitle={t("home.title")}
+	description={t("home.description")}
+	type="content"
+>
+	<main class="flex flex-col gap-8 items-center px-8 mx-auto max-w-[75ch]">
+		<Intro />
+	</main>
+</Layout>
